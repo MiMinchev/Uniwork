@@ -1,0 +1,318 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
+*{
+box-sizing: border-box;
+}
+body,html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    background-color: #f1f1f1;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+nav{
+    overflow: hidden;
+    background: black;
+    line-height: 40px;
+}
+
+nav a{
+    float: left;
+    display: block;
+    width: 120px;
+    color: #fff;
+    text-align: center;
+    padding: 12px 8px;
+    text-decoration: none;
+    font-size: 16px;
+   
+    
+}
+
+nav a:hover{
+    background: #ddd;
+    color: black;
+}
+
+nav a.active{
+    background: #2196f3;
+    color: #fff;
+
+}
+nav .content{
+    float: right;
+    margin-right: 100px;
+    margin-top: 10px;
+}
+
+nav input[type=text], [type=password]{
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+    width: 100px;
+}
+
+.content button{
+    float: right;
+    padding: 6px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #2196f3;
+    color: #fff;
+    font-size: 17px;
+    border:none;
+    cursor: pointer;
+    border: 2px solid white;
+    
+
+
+}
+
+.content button:hover{
+    background: #ccc;
+
+}
+
+.hero-image{
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+    background: url(strong.jpg) no-repeat center; 
+    background-size: cover;
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    text-align: center;
+    color:white;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.container h1{
+    font-size: 72px;
+    letter-spacing: 0.2em;
+    margin: 0;
+
+}
+
+.container h1 span{
+    border:10px solid white;
+    padding: 6px 14px;
+    display: inline-block;
+
+}
+.des{
+    margin: 20px;
+    display: block;
+    font-size: 26px;
+    text-shadow: 0 0 10px black;
+
+}
+
+
+a
+{
+    text-decoration: none;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+.guide{
+    color: solid black;
+}
+
+input[type=checkbox]{
+    display: none;
+}
+
+input[type=checkbox]:checked ~ ul.nav-small{
+   
+    height: 170px;
+
+}
+
+.card-section{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px;
+
+}
+
+.card{
+    border-style:dashed;
+    text-align: center;
+    border-radius: 15px;
+    max-width: 400px;
+}
+
+.card h2{
+    margin-bottom: 16px;
+}
+
+.card p{
+    margin-bottom: 32px;
+}
+
+.card .date{
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+
+
+.card i{
+    font-size: 100px;
+}
+
+.card a{
+    border: 1px solid black;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+
+.card img{
+    width: 100%;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.card-stat{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex: 5 0 0px;
+    color: white;
+    padding: 10px;
+    border-radius: 0 0 15px 15px;
+
+}
+
+.card-stat span{
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.card-stat p{
+    width: 33%;
+    margin-bottom: 8px;
+
+}
+
+.card-stat p:nth-child(2){
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+
+.text-13{
+    margin-bottom: 370px
+}
+
+
+.footer{
+    margin-top: 150px;
+    
+    padding: 100px 15%;
+    background: #333;
+    color: #efefef;
+    display: flex;
+}
+
+.footer div{
+    text-align: center;
+}
+
+
+.col-2{
+    padding: 20px 85px;
+}
+
+.footer div h3{
+    font-weight: 300;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+.footer div h4{
+    font-weight: 300;
+    margin-bottom: 15px;
+    letter-spacing: 1px;  
+}
+
+.col-1 a{
+    display: block;
+    text-decoration: none;
+    color: #efefef;
+    margin-bottom: 10px;
+}
+
+form input{
+    width: 400px;
+    height: 45px;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    outline: none;
+    border: none;
+}
+
+form button{
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.social-icons{
+    margin-top: 30px;
+}
+
+.social-icons i{
+font-size: 22px;
+margin: 10px;
+cursor: pointer;
+}
+
+
+@media (max-width: 600px)
+{
+    ul.nav
+    {
+        display: none;
+    }
+
+    .burger
+    {
+        display: block;
+    }
+}
+
+@media (min-width: 872px) and (max-width: 1234px)
+{
+    div.card.first{
+        min-width: 815px;
+        max-width: 815px;
+    }
+}
+
+@media (min-width: 1235px) and (max-width: 1300px)
+{
+    div.card{
+        max-width: 300px;
+    }
+}
